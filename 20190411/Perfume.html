@@ -1,0 +1,127 @@
+<!DOCTYPE html> <!-- Perfume.html -->
+<html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>향수 종류</title>
+<script language="javascript"> 
+function showSub(obj) {
+    f = document.forms.select_machine;
+if(obj == 1) {
+     f.SUB1.style.display = "";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "none";
+     f.SUB6.style.display = "none";
+    } 
+else if(obj == 2) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "none";
+     f.SUB6.style.display = "none";
+     }
+else if(obj == 3) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "none";
+     f.SUB6.style.display = "none";
+     }
+else if(obj == 4) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "";
+     f.SUB5.style.display = "none";
+     f.SUB6.style.display = "none";
+     }
+ else if(obj == 5) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "";
+     f.SUB6.style.display = "none";
+     }
+ else if(obj == 6) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "none";
+     f.SUB6.style.display = "";
+     }
+}
+
+
+ function test() {
+    document.getElementById("id_1").innerHTML
+    ="ee";
+   }
+  
+</script>
+</head>
+<body>
+<section>
+<fieldset>
+<legend>향수 선택</legend>
+<form name="select_machine">
+<select name=" " onchange="showSub(this.options[this.selectedIndex].value);"> 
+<option value="1">브랜드 이름</option> 
+<option value="2">BVLGARI</option> 
+<option value="3">Jo Malone </option>
+<option value="4">AFRIMO</option>
+<option value="5">DIPTYQUE(딥디크)</option>
+<option value="6">랑방</option></select>
+<select name="SUB1" style="display: ;">
+<option value=" ">향수 종류</option>
+</select>
+<select name="SUB2" style="display: none;">
+ <option value="">향수 종류</option> 
+ <option value=" ">불가리 맨 </option>
+ <option value=" ">아쿠아 </option>
+ <option value=" ">클래식</option>
+ <option value=" ">뿌르 옴므</option>
+ <option value=" ">골데아 </option>
+ <option value=" ">스플랜디다</option>
+ <option value=" ">옴니아 </option>
+ <option value=" ">쁘띠 마망 </option></select>
+<select name="SUB3" style="display: none;">
+ <option value=" ">블랙베리 앤 베이</option>
+ <option value=" ">넥타린 블로썸 앤 허니</option>
+ <option value=" ">잉글리쉬 페어 앤 프리지아</option>
+ <option value=" ">우드세이지 앤 씨솔트</option>
+ <option value=" ">피오니 앤 블러쉬</option>
+ <option value=" ">바질 앤 네롤리</option>
+ <option value=" ">와일드 블루벨</option>
+</select>
+<select name="SUB4" style="display: none;">
+ <option value=" ">아프리모 미드나잇</option>
+ <option value=" ">아프리모 핫 스터프 </option>
+ <option value=" ">아프리모 오리지널</option>
+ <option value=" ">아프리모 로맨틱</option>
+ <option value=" ">아프리모 골드</option>
+</select>
+<select name="SUB5" style="display: none;">
+ <option value=" ">오데썽</option>
+ <option value=" ">오로즈 </option>
+ <option value=" ">올렌느</option>
+ <option value=" ">롬브로단로</option>
+ <option value=" ">도손</option>
+</select>
+<select name="SUB6" style="display: none;">
+ <option value=" ">잔느</option>
+ <option value=" ">에끌라 </option>
+ <option value=" ">메리미</option>
+ <option value=" ">루머</option>
+ <option value=" ">옴므</option>
+ <option value=" ">베티베리오</option>
+</select>
+    <input type="submit" value="저장" onclick="test()">
+    <input type="reset" value="취소">
+    <p id="id_1"></p>
+ </form> </fieldset>
+</section>
+</body></html> 
