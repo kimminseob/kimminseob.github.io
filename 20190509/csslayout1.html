@@ -1,31 +1,33 @@
 <!DOCTYPE html> <!-- csslayout1.html -->
 <html><head>
-<meta content="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CSS layout</title>
+<meta content="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    div#a {widows: 1000px; text-align: left; min-height: 300px; margin: 0;}
-    header {border: 2px solid; margin: 5px; padding: 10px; height: 20px; width:1100px; text-align: center; width:1200px;}
-    nav(menu) {border: 2px solid; margin: 5px; padding: 10px; float: left; height: 500px; width: 25%; text-align: center; width:1200px;}
-    contents {border: 2px solid; margin: 5px; padding: 10px; float: left; height: 500px; width: 50%; text-align: center; width:1200px;}
-    aside(banner) {border: 2px solid; margin: 5px; padding: 10px; float: left; height: 500px; width: 25%; text-align: center; width:1200px;}
-    footer {border: 2px solid; margin: 5px; padding: 10px; height: 20px; width:1100px; clear: both; text-align: center; width:1200px;}
+    body {width: 1045px;}
+    header, footer, nav, aside, section {border:1px solid black; margin:5px; padding:0px; text-align:center;}
+    header {height:40px; width:1000px;}
+    nav {float: left; height:400px;width:250px;}
+    section {float: left; height:400px;width:475px;}
+    aside {float: left; height:400px;width:250px;}
+    footer {height:40px; width:1000px; clear:both;}
 </style>
+<title>CSS layout</title>
 </head>
 <body>
-    <div id="a">
-    <header>
-       
-    </header>
-    <nav(menu)>
-       
-    </nav(menu)>
-    <contents>
-     
-    </contents>
-    <aside(banner)>
-     
-    </aside(banner)>
-    <footer>
-       
-    </footer>
-    </div></body></html>
+    <div>
+        <header>
+            <p>header</p>
+        </header>
+        <nav>
+          <p>nav</p>
+        </nav>
+        <section>
+          <p>section</p>            
+        </section>
+        <aside>
+          <p>aside</p>
+        </aside>
+        <footer>
+          <p>footer</p>
+        </footer>
+    </div>
+</body></html>
