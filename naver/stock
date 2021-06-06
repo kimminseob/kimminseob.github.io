@@ -1,0 +1,53 @@
+from typing import Text
+import requests
+from bs4 import BeautifulSoup
+
+def crawl(url):
+    data = requests.get(url)
+    print(data)
+    return data.content
+
+def getStockInfo(tr):
+    tds = tr.findAll("td")
+    rank = tds[0],Text
+    aTag = tds[1].find("a")
+    href = aTag["href"]
+    name = aTag.text
+    nowPrice = tds[2].text 
+    a = tds[3].text
+    b = tds[4].text
+    totalPrice = tds[6].text
+    vloume = tds[9].text
+    return {"번호":rank, "이름":name, "전일비":a, "등락률":b , "현재가":nowPrice, "시가총액":totalPrice,
+    "거래량":vloume}
+
+def parse(pageString):
+    bs0bj = BeautifulSoup(pageString, "html.parser")
+    box_type_l = bs0bj.find("div", {"class":"box_type_l"})
+    type_2 = box_type_l.find("table",{"class":"type_2"})
+    tbody = type_2.find("tbody")
+    trs = tbody.findAll("tr")
+    stockInfos = []
+    for tr in trs:
+        try:
+            stockInfo = getStockInfo(tr)
+            stockInfos.append(stockInfo)
+        except Exception as e:
+                print("error")
+                pass
+                
+    return stockInfos
+
+
+def getSiseMarketSum(sosok, page):
+    url = "https://finance.naver.com/sise/sise_market_sum.nhn?sosok=0&page=1".format(sosok, page)
+    pageString = crawl(url)
+    list = parse(pageString)
+    return list
+
+result = []
+
+for page in range(1,10 + 1):
+    list = getSiseMarketSum(1, page) #0 = cos #1 = cod
+    result += list
+print(result)
