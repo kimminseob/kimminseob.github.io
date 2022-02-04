@@ -11,16 +11,15 @@
    <h2>자바 스크립트를 환영합니다</h2></header>
 <nav>
    <ul>
-     <li><a href="http://www.dju.ac.kr">대학</a></li>
-     <li><a href="http://hive.dju.ac.kr">실습서버</a></li>
-     </ul></nav>
-     <button class="HomeContainer_option__1Pn5J"><img alt="option" src="/images/icon/gear.png"></button>
-     <div class="Modal_contents__3Narq"><div class="SettingModal_SettingModal__1NDd0"><h2 class="SettingModal_title__2-U4k">설정</h2><div><div class="SettingModal_option__Fhl-U"><p>색상 테마</p><button class="
-        ThemeToggleSlider_ThemeToggleSlider__2BB4S 
-        ThemeToggleSlider_dark__3DaP5 
-        
-      "><img class="ThemeToggleSlider_image_light__18ciu" src="/images/icon/sun--gray.png"><img class="ThemeToggleSlider_image_dark__3xDnV" src="/images/icon/moon--gray.png"><span class="ThemeToggleSlider_pointer__HeUpp"></span></button></div><div class="SettingModal_option__Fhl-U"><p>언어 선택</p><div class="Popover_Popover__3n5Ja Dropdown_Dropdown__2Fuxu "><div class="Dropdown_trigger__zYRD6"><button><p>한국어</p><img alt="toggle icon" src="/images/icon/dropdown-arrow.svg" class=""></button></div></div></div></div></div><button class="Modal_close__3iX6g Modal_type_hover__2Uc8I"><img alt="close" src="/images/icon/close.png"></button></div>
-<section>
+     <li><a href="https://asia.battlegrounds.pubg.com/ko">배틀그라운드</a></li>
+     <li><a href="https://www.leagueoflegends.com/ko-kr">리그오브레전드</a></li>
+     <li><a href="https://lostark.game.onstove.com/Main">로스트아크</a></li>
+     <li><a href="https://fifaonline4.nexon.com/main/index">피파온라인4</a></li>
+     <li><a href="https://playoverwatch.com/ko-kr">오버워치</a></li>
+     <li><a href="https://sa.nexon.com/main/index.aspx">서든어택</a></li>
+     <li><a href="https://maplestory.nexon.com/Home/Main">메이플스토리</a></li>
+     </ul>
+ </nav>
 <h4>자바 스크립트 실행합니다</h4>
   <script>fn Test();</script>
 </section>
