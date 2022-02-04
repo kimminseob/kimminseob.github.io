@@ -1,0 +1,30 @@
+<!DOCTYPEhtml> <!-- projectPage.html -->
+<html>
+<head>
+<html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="sample.css"/>
+<script src="sample.js"></script>
+<title>자바 스크립트 실습</title>
+</head>
+<body>
+<header>
+   <h2>자바 스크립트를 환영합니다</h2></header>
+<nav>
+   <ul>
+     <li><a href="http://www.dju.ac.kr">대학</a></li>
+     <li><a href="http://hive.dju.ac.kr">실습서버</a></li>
+     </ul></nav>
+     <button class="HomeContainer_option__1Pn5J"><img alt="option" src="/images/icon/gear.png"></button>
+     <div class="Modal_contents__3Narq"><div class="SettingModal_SettingModal__1NDd0"><h2 class="SettingModal_title__2-U4k">설정</h2><div><div class="SettingModal_option__Fhl-U"><p>색상 테마</p><button class="
+        ThemeToggleSlider_ThemeToggleSlider__2BB4S 
+        ThemeToggleSlider_dark__3DaP5 
+        
+      "><img class="ThemeToggleSlider_image_light__18ciu" src="/images/icon/sun--gray.png"><img class="ThemeToggleSlider_image_dark__3xDnV" src="/images/icon/moon--gray.png"><span class="ThemeToggleSlider_pointer__HeUpp"></span></button></div><div class="SettingModal_option__Fhl-U"><p>언어 선택</p><div class="Popover_Popover__3n5Ja Dropdown_Dropdown__2Fuxu "><div class="Dropdown_trigger__zYRD6"><button><p>한국어</p><img alt="toggle icon" src="/images/icon/dropdown-arrow.svg" class=""></button></div></div></div></div></div><button class="Modal_close__3iX6g Modal_type_hover__2Uc8I"><img alt="close" src="/images/icon/close.png"></button></div>
+<section>
+<h4>자바 스크립트 실행합니다</h4>
+  <script>fn Test();</script>
+</section>
+<footer>
+<p>&copy; 20XX Made by Korea. All rights reserved. </p></footer>
+</body>
+</html>
